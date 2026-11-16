@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web dizajn i razvoj sajtova za male biznise</title>
+<meta name="description" content="Dizajniram i razvijam moderne, profesionalne sajtove za salone, frizere, fitnes trenere, frilensere i male lokalne biznise.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Web dizajn i razvoj sajtova za male biznise">
+<meta property="og:description" content="Moderni, profesionalni sajtovi koji pomažu biznisima da se izdvoje i izgrade poverenje na mreži.">
+<meta name="twitter:card" content="summary">
+<!-- TODO after deploy: add <link rel="canonical">, og:url and og:image (1200x630 PNG/JPG) -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Pređi na sadržaj</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#home"><span data-brand>Your Name</span><small data-i18n="logo">web dizajn</small></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu" aria-label="Main">
+      <a href="#home" data-i18n="n1">Početna</a>
+      <a href="#work" data-i18n="n2">Radovi</a>
+      <a href="#services" data-i18n="n3">Usluge</a>
+      <a href="#about" data-i18n="n4">O meni</a>
+      <a href="#contact" data-i18n="n5">Kontakt</a>
+      <div class="lang" role="group" aria-label="Language"><button data-lang="sr">SR</button><button data-lang="en">EN</button></div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero wrap">
+  <div class="hero-copy">
+    <h1 data-i18n="h1">Vaš biznis zaslužuje bolji sajt.</h1>
+    <p class="lead" data-i18n="sub">Dizajniram i razvijam moderne, profesionalne sajtove koji pomažu biznisima da se izdvoje, privuku klijente i izgrade poverenje na mreži.</p>
+    <div class="cta">
+      <a class="btn" href="#work" data-i18n="cta1">Pogledaj radove</a>
+      <a class="btn ghost" href="#contact" data-i18n="cta2">Hajde da razgovaramo</a>
+    </div>
+  </div>
+  <div class="portrait" id="portrait">
+    <div class="aura" aria-hidden="true"></div>
+    <div class="halo" aria-hidden="true"></div>
+    <img src="assets/photo.png" alt="" width="432" height="578" fetchpriority="high" data-i18n-alt="alt_me">
+    <span class="chip c1" aria-hidden="true"><i>&lt;/&gt;</i> HTML / CSS</span>
+    <span class="chip c2" aria-hidden="true"><b>Aa</b></span>
+    <span class="chip c3" aria-hidden="true"><u></u><u></u><u></u> #7C5CFF</span>
+    <span class="chip c4" aria-hidden="true">◆ UI / UX</span>
+    <span class="chip c5" aria-hidden="true"><em></em> Responsive</span>
+  </div>
+</section>
+
+<section id="work" class="sec wrap">
+  <h2 data-i18n="h_work">Sajtovi koji ostavljaju utisak.</h2>
+  <div class="grid">
+    <article class="card feat">
+      <!-- Replace .shot contents with: <img src="assets/residents.webp" alt="residents.sk" loading="lazy" width="1200" height="750"> -->
+      <div class="shot has-img"><img src="assets/residents.sk.png" alt="Sajt residents.sk" loading="lazy" width="1200" height="750"></div>
+      <div class="body">
+        <p class="cat" data-i18n="c_biz">Poslovni sajt</p>
+        <h3>Residents SK</h3>
+        <p data-i18n="d_res">Sajt za lokalnog predstavnika koji zastupa automotive kompanije u Slovačkoj: jasna ponuda, kontakt na više jezika i prikaz ključnih pokazatelja.</p>
+        <p class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></p>
+        <a class="link" href="https://residents.sk/" target="_blank" rel="noopener" data-i18n="view">Pogledaj projekat</a>
+      </div>
+    </article>
+    <article class="card"><div class="shot rose" aria-hidden="true"><div class="l w50"></div><div class="l w30 t"></div></div><div class="body"><p class="cat"><span data-i18n="concept">Koncept</span></p><h3>Beauty Studio</h3><p data-i18n="d_beauty">Sajt za salon lepote: usluge, cenovnik i zakazivanje.</p></div></article>
+    <article class="card"><div class="shot ink" aria-hidden="true"><div class="l w50"></div><div class="l w30 t"></div></div><div class="body"><p class="cat"><span data-i18n="concept">Koncept</span></p><h3>Barber Shop</h3><p data-i18n="d_barber">Sajt za frizerski salon: tim, usluge i kontakt na jednom mestu.</p></div></article>
+    <article class="card"><div class="shot sage" aria-hidden="true"><div class="l w50"></div><div class="l w30 t"></div></div><div class="body"><p class="cat"><span data-i18n="concept">Koncept</span></p><h3>Fitness Coach</h3><p data-i18n="d_fit">Sajt za personalnog trenera: programi, rezultati i prijava.</p></div></article>
+    <article class="card"><div class="shot sand" aria-hidden="true"><div class="l w50"></div><div class="l w30 t"></div></div><div class="body"><p class="cat"><span data-i18n="concept">Koncept</span></p><h3>Local Business</h3><p data-i18n="d_local">Sajt za lokalni biznis: šta nudite, gde ste i kako da vas pronađu.</p></div></article>
+  </div>
+</section>
+
+<section id="services" class="sec wrap">
+  <h2 data-i18n="h_serv">Šta mogu da napravim za vas.</h2>
+  <div class="grid4">
+    <article class="svc"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><h3 data-i18n="s1">Sajtovi za biznis</h3><p data-i18n="s1d">Profesionalni sajtovi koji predstavljaju vaš biznis, usluge, kontakt podatke i brend.</p></article>
+    <article class="svc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg><h3 data-i18n="s2">Landing stranice</h3><p data-i18n="s2d">Fokusirane stranice posvećene jednoj usluzi, ponudi ili proizvodu.</p></article>
+    <article class="svc"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><h3 data-i18n="s3">Portfolio sajtovi</h3><p data-i18n="s3d">Lepi onlajn portfoliji za frilensere, kreativce i nezavisne profesionalce.</p></article>
+    <article class="svc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-2.3-.7-.7-2.3z"/></svg><h3 data-i18n="s4">Održavanje sajta</h3><p data-i18n="s4d">Redovna ažuriranja, poboljšanja i tehnička podrška da sajt uvek bude u toku.</p></article>
+  </div>
+</section>
+
+<section id="process" class="sec wrap">
+  <h2 data-i18n="h_proc">Jednostavan proces. Profesionalni rezultati.</h2>
+  <ol class="steps">
+    <li><b>01</b><h3 data-i18n="p1">Upoznavanje</h3><p data-i18n="p1d">Razgovaramo o vašem biznisu, ciljevima i zahtevima za sajt.</p></li>
+    <li><b>02</b><h3 data-i18n="p2">Dizajn</h3><p data-i18n="p2d">Pravim dizajn koji odgovara vašem brendu i ciljnoj publici.</p></li>
+    <li><b>03</b><h3 data-i18n="p3">Razvoj</h3><p data-i18n="p3d">Pravim responzivan, funkcionalan sajt optimizovan za računare i telefone.</p></li>
+    <li><b>04</b><h3 data-i18n="p4">Objava</h3><p data-i18n="p4d">Vaš sajt ide uživo i spreman je za klijente.</p></li>
+  </ol>
+</section>
+
+<section id="about" class="sec wrap about">
+  <img src="assets/photo.png" alt="" width="400" height="500" loading="lazy" data-i18n-alt="alt_me">
+  <div>
+    <h2 data-i18n="h_about">Lični pristup. Profesionalni rezultati.</h2>
+    <p data-i18n="a1">Nezavisni sam web dizajner i developer, posvećen pravljenju modernih, funkcionalnih i vizuelno privlačnih sajtova.</p>
+    <p data-i18n="a2">Radim direktno sa klijentima, razumem njihove potrebe i pretvaram ideje u profesionalno onlajn iskustvo.</p>
+    <p data-i18n="a3">Fokus mi je na čistom dizajnu, responzivnom razvoju i sajtovima koji olakšavaju klijentima da se povežu sa biznisom.</p>
+  </div>
+</section>
+
+<section id="contact" class="sec wrap contact">
+  <div>
+    <h2 data-i18n="h_cont">Hajde da zajedno napravimo nešto sjajno.</h2>
+    <p data-i18n="cont_t">Imate ideju za sajt ili želite da unapredite svoje prisustvo na mreži? Recite mi nešto o svom biznisu i razgovarajmo kako mogu da pomognem.</p>
+
+    <p class="links"><a href="mailto:hello@example.com" data-email>hello@example.com</a><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" data-ig>Instagram</a></p>
+  </div>
+  <form id="form" novalidate>
+    <label for="f-name" data-i18n="f_name">Ime</label>
+    <input id="f-name" name="name" autocomplete="name" aria-describedby="e-name">
+    <span class="err" id="e-name"></span>
+    <label for="f-mail" data-i18n="f_mail">Email</label>
+    <input id="f-mail" name="email" type="email" autocomplete="email" aria-describedby="e-mail">
+    <span class="err" id="e-mail"></span>
+    <label for="f-msg" data-i18n="f_msg">Poruka</label>
+    <textarea id="f-msg" name="message" rows="5" aria-describedby="e-msg"></textarea>
+    <span class="err" id="e-msg"></span>
+    <button class="btn" type="submit" data-i18n="f_send">Pošalji poruku</button>
+    <p class="status" id="status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong data-brand>Your Name</strong><p data-i18n="foot">Nezavisni web dizajn i razvoj sajtova za male biznise.</p></div>
+    <nav aria-label="Footer"><a href="#work" data-i18n="n2">Radovi</a><a href="#services" data-i18n="n3">Usluge</a><a href="#about" data-i18n="n4">O meni</a><a href="#contact" data-i18n="n5">Kontakt</a></nav>
+    <div><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" data-ig>Instagram</a><br><a href="mailto:hello@example.com" data-email>hello@example.com</a></div>
+  </div>
+  <p class="wrap copy">© <span id="year"></span> <span data-brand>Your Name</span></p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
