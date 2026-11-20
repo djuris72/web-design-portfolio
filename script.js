@@ -20,9 +20,10 @@ const EN = {
   d_res:'Website for a local representative serving international automotive companies in Slovakia: a clear offer, multilingual contact and key metrics at a glance.',
   t_resp:'Responsive design', t_form:'Contact form', view:'View project', concept:'Concept (demo)',
   d_beauty:'Beauty salon website: services, price list and booking.',
-  d_barber:'Barbershop website: team, services and contact in one place.',
-  d_fit:'Personal trainer website: programs, results and sign-up.',
-  d_local:'Local business website: what you offer, where you are and how to reach you.',
+  d_barber:'Premium barbershop website concept featuring services, barber team, gallery and contact information.',
+  d_fit:'Premium personal fitness coaching website featuring training programs, client transformations and coaching services.',
+  d_tattoo:'Premium tattoo studio website featuring professional artists, tattoo styles, a curated gallery and booking experience.',
+  live:'Live Preview',
   h_serv:'What I Can Build for You.',
   s1:'Business Websites', s1d:'Professional websites that present your business, services, contact information and brand.',
   s2:'Landing Pages', s2d:'Focused landing pages designed to present a specific service, offer or product.',
@@ -62,7 +63,7 @@ $('[data-i18n]').forEach(e => { if (!(e.dataset.i18n in SR)) SR[e.dataset.i18n] 
 $('[data-i18n-alt]').forEach(e => SRALT[e.dataset.i18nAlt] = e.alt);
 SR.alt_me = 'Moja fotografija';
 let lang = 'sr';
-const t = k => (lang === 'en' ? EN[k] : (SR[k] ?? SRX[k]));
+const t = k => (lang === 'en' ? (EN[k] ?? SR[k]) : (SR[k] ?? SRX[k] ?? EN[k]));
 
 function setLang(l) {
   lang = l;
